@@ -33,50 +33,53 @@ Here are the details for the calculated fields:
 
 The REST API to this app is described below.
 
-## Get list of Things
+## Get list of User Profile
 
 ### Request
 
-`GET /thing/`
+`GET /User Profile/`
 
-    curl -i -H 'Accept: application/json' http://localhost:7000/thing/
+    curl -X GET "https://localhost:7219/api/UserProfile" -H "accept: text/plain"
 
 ### Response
 
-    HTTP/1.1 200 OK
-    Date: Thu, 24 Feb 2011 12:36:30 GMT
-    Status: 200 OK
-    Connection: close
-    Content-Type: application/json
-    Content-Length: 2
-
+ content-length: 263 
+ content-type: application/json; charset=utf-8 
+ date: Fri, 12 Jul 2024 14:16:03 GMT 
+ server: Kestrel 
     []
 
-## Create a new Thing
+## Create a User Profile
 
 ### Request
 
-`POST /thing/`
+`POST /User Profile/`
 
-    curl -i -H 'Accept: application/json' -d 'name=Foo&status=new' http://localhost:7000/thing
+    curl -X POST "https://localhost:7219/api/UserProfile" -H "accept: */*" -H "Content-Type: application/json-patch+json" -d "{\"UserId\":0,\"Name\":\"vergara\",\"Weight\":75,\"Height\":155,\"BirthDate\":\"2014-07-12T14:17:53.730Z\",\"Age\":20}"
 
 ### Response
 
-    HTTP/1.1 201 Created
-    Date: Thu, 24 Feb 2011 12:36:30 GMT
-    Status: 201 Created
-    Connection: close
-    Content-Type: application/json
-    Location: /thing/1
-    Content-Length: 36
+   access-control-allow-origin: * 
+ content-length: 125 
+ content-type: application/json; charset=utf-8 
+ date: Fri, 12 Jul 2024 14:18:22 GMT 
+ server: Kestrel 
 
-    {"id":1,"name":"Foo","status":"new"}
+ {
+  "UserId": 0,
+  "Name": "vergara",
+  "Weight": 75,
+  "Height": 155,
+  "BirthDate": "2014-07-12T14:17:53.73Z",
+  "Age": 20,
+  "BMI": 31.21748178980229
+}
 
-## Get a specific Thing
+## Get a specific User Profile
 
 ### Request
 
-`GET /thing/id`
+`GET /User Profile/id`
 
     curl -i -H 'Accept: application/json' http://localhost:7000/thing/1
 

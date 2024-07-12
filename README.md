@@ -18,8 +18,8 @@ Here are the details for the calculated fields:
 ## Run Nuget command
     update-database
 	dotnet run seeddata
-Note: click "stop command execution" after running dotnet run to avoid System.IO.IOException error
-<code style="color : name_color">text</code>
+<p style="color:red">Note: click "stop command execution" after running dotnet run to avoid System.IO.IOException error</p>
+
 ## Run the app
 	Default URL:
     https://localhost:7219/index.html

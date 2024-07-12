@@ -18,7 +18,8 @@ Here are the details for the calculated fields:
 ## Run Nuget command
     update-database
 	dotnet run seeddata
-<p style="color:red">Note: click "stop command execution" after running dotnet run to avoid System.IO.IOException error</p>
+ 
+<p style="color:red;">Note: click "stop command execution" after running dotnet run to avoid System.IO.IOException error</p>
 
 ## Run the app
 	Default URL:

@@ -10,8 +10,6 @@ Here are the details for the calculated fields:
 <h4>Log Directory:</h4>
 
 
-## Project Log Director
-{Project Debug Folder}/net6.0/Logs/{date}/InfoLog.txt
 
 
 ## Project Setup
@@ -31,7 +29,10 @@ Here are the details for the calculated fields:
 ## Run the tests
 
     ./run-tests.sh
-
+    
+## Project Log Directory
+	   {Project Debug Folder}/net6.0/Logs/{date}/InfoLog.txt
+    
 # REST API
 
 The REST API to this app is described below.

@@ -28,6 +28,15 @@ namespace RunningApp.Controllers
         public async Task<IEnumerable<RunningActivityDTO>> Get()
         {
             var acitvities = await _runningActivityRepository.GetAll();
+
+
+            if (acitvities == null)
+            {
+                return null;
+            }
+
+
+
             _logger.LogInfo("get all running activity record");
             return acitvities.Select(a => a.ToRunningActivityDTOModel()).ToList();
         }
@@ -37,6 +46,13 @@ namespace RunningApp.Controllers
         public async Task<RunningActivityDTO> Get(int id)
         {
             var acitvity = await _runningActivityRepository.GetByIdAsync(id);
+
+            if (acitvity == null)
+            {
+                return null;
+            }
+
+
             _logger.LogInfo($"get running activity with id:{id}");
             return acitvity.ToRunningActivityDTOModel();
         }

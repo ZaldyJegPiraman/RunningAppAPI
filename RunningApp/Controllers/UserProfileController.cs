@@ -31,6 +31,13 @@ namespace RunningApp.Controllers
         public async Task<IEnumerable<UserProfileDTO>> Get()
         {
             var users = await _userProfileRepository.GetAll();
+
+            if (users == null)
+            {
+                return null;
+            }
+
+
             _logger.LogInfo("get all user profile record");
             return users.Select(a => a.ToUserProfileDTOModel()).ToList(); 
         }
@@ -40,6 +47,12 @@ namespace RunningApp.Controllers
         public async Task<UserProfileDTO> Get(int id)
         {
             var user = await _userProfileRepository.GetByIdAsync(id);
+
+            if (user == null)
+            {
+                return null;
+            }
+
             _logger.LogInfo($"get user profile with id:{id}");
             return user.ToUserProfileDTOModel();
         }

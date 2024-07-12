@@ -19,7 +19,7 @@ Here are the details for the calculated fields:
     update-database
 	dotnet run seeddata
 Note: click "stop command execution" after running dotnet run to avoid System.IO.IOException error
-
+<code style="color : name_color">text</code>
 ## Run the app
 	Default URL:
     https://localhost:7219/index.html

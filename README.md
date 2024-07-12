@@ -15,6 +15,8 @@ Here are the details for the calculated fields:
 <li>Average Pace: <br/><b>Formula: Average Pace (seconds per kilometer) = Duration total seconds divided by Distance(KM) </b></li>
 </ul>
 
+
+<img src="[https://example.com/path/to/image.png](https://github.com/ZaldyJegPiraman/RunningAppAPI/edit/main/calculated-fields.jpg)" alt="Alt text">
 <h4>Log Directory:</h4>
 <b>{Project Debug Folder}/net6.0/Logs/{date}/InfoLog.txt</b>
 

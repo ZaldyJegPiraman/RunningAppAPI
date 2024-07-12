@@ -19,7 +19,8 @@ Here are the details for the calculated fields:
     update-database
 	dotnet run seeddata
 ```diff
--  <b>Note:</b> click "stop command execution" after running dotnet run to avoid System.IO.IOException error
+-  Note: click "stop command execution" after running dotnet run to avoid System.IO.IOException error
+
 ## Run the app
 	Default URL:
     https://localhost:7219/index.html

@@ -21,10 +21,6 @@ Here are the details for the calculated fields:
 ## Run the app
 	Default URL:
     https://localhost:7219/index.html
-
-## Run the tests
-
-    ./run-tests.sh
     
 ## Project Log Directory
 	   {Project Debug Folder}/net6.0/Logs/{date}/InfoLog.txt

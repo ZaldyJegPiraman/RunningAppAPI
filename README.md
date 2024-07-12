@@ -8,7 +8,10 @@ Here are the details for the calculated fields:
 <img alt="calculated-fields.jpg" src="https://github.com/ZaldyJegPiraman/RunningAppAPI/blob/main/calculated-fields.jpg?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 kzRgrI">
 
 <h4>Log Directory:</h4>
-<b>{Project Debug Folder}/net6.0/Logs/{date}/InfoLog.txt</b>
+
+
+## Project Log Director
+{Project Debug Folder}/net6.0/Logs/{date}/InfoLog.txt
 
 
 ## Project Setup

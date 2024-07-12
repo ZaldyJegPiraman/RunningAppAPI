@@ -5,18 +5,8 @@ The application comprises two tables: one for storing user profile data and anot
 
 
 Here are the details for the calculated fields:
-
-<h4>BMI (Body Mass Index) for User Profiles:</h4>
-<b>Formula: BMI = (weight in kilograms (kg) divided by height in centimetre (cm) squared) multiply by 10000. </b>
-
-<h4>Calculated Fields for Running Activity:</h4>
-<ul>
-<li>Duration: <br/><b>Formula: Duration = DateTime Ended − DateTime Started</b></li>
-<li>Average Pace: <br/><b>Formula: Average Pace (seconds per kilometer) = Duration total seconds divided by Distance(KM) </b></li>
-</ul>
-
-
 <img alt="calculated-fields.jpg" src="https://github.com/ZaldyJegPiraman/RunningAppAPI/blob/main/calculated-fields.jpg?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 kzRgrI">
+
 <h4>Log Directory:</h4>
 <b>{Project Debug Folder}/net6.0/Logs/{date}/InfoLog.txt</b>
 
@@ -28,7 +18,8 @@ Here are the details for the calculated fields:
 ## Run Nuget command
     update-database
 	dotnet run seeddata
-	Note: click "stop command execution" after running dotnet run to avoid System.IO.IOException error
+```diff
+-  <b>Note:</b> click "stop command execution" after running dotnet run to avoid System.IO.IOException error
 ## Run the app
 	Default URL:
     https://localhost:7219/index.html

@@ -16,7 +16,7 @@ Here are the details for the calculated fields:
 </ul>
 
 
-<img src="[https://example.com/path/to/image.png](https://github.com/ZaldyJegPiraman/RunningAppAPI/edit/main/calculated-fields.jpg)" alt="Alt text">
+<img alt="calculated-fields.jpg" src="https://github.com/ZaldyJegPiraman/RunningAppAPI/blob/main/calculated-fields.jpg?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 kzRgrI">
 <h4>Log Directory:</h4>
 <b>{Project Debug Folder}/net6.0/Logs/{date}/InfoLog.txt</b>
 
